@@ -15,7 +15,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
+	font-weight: 500;
 	text-transform: uppercase;
 	margin: 0;
 }
@@ -30,6 +30,10 @@ textarea {
 
 h1 {
 	font-size: 23px;
+}
+
+h2 {
+	font-size: 25px;
 }
 
 p, ul, li {
@@ -166,6 +170,15 @@ p {
 	border-right: 1px solid #999;
 }
 
+/* ADVICE */
+
+.advice {
+
+}
+
+.advice__title span {
+	color: #FFDD2D;
+}
 /* ------ Media Queries ------ */
 
 /* 992-1200px */
