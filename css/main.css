@@ -1,0 +1,189 @@
+/* ----- Спецификация ----- */
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	color: #000;
+	letter-spacing: 0.02em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+section {
+
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+p, ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active{
+	outline: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.button {
+	text-align: center;
+	display: block;
+	width: 203px;
+	height: 55px;
+	line-height: 55px;
+	background: #FFDD2D;
+	font-size: 16px;
+	color: #000000;
+	border: 1px solid #FFDD2D;
+}
+
+.button:hover {
+	color: #ffdd2d;
+	background: #fff;
+}
+
+
+/* ----- Header ----- */
+
+.header {
+	padding-top: 45px;
+	background-image: url(../img/bg-header.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.logo {
+	font-size: 24px;
+	color: #000000;
+}
+
+.logo span {
+	color: #ffdd2d;
+}
+
+.logo:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav__menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__menu_item {
+	color: #000000;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+.nav__menu_item:hover {
+	color: #ffdd2d;
+}
+
+.header__phone {
+	font-weight: 500;
+	font-size: 17px;
+	color: #FFFFFF;
+}
+
+.header__phone:hover {
+	color: #ffffff;
+}
+
+.header__line {
+	display: block;
+	width: 674px;
+	border: 1px solid rgba(234, 234, 234, 0.5);
+	margin-top: 47px;
+}
+
+.header__title {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.7em;
+	padding-top: 120px;
+}
+.header__title span {
+	color: #ffdd2d;
+	font-weight: 700;
+}
+
+.header__title span:nth-child(2) {
+	color: #000;
+	font-weight: 700;
+}
+
+.header__text {
+	line-height: 1.7em;
+	width: 260px;
+	margin: 40px 0 48px 0;
+}
+
+.header__btn {
+
+}
+
+.header__links {
+	background: #000;
+	margin-left: 15px;
+	margin-top: 130px;
+}
+
+.header__links .header__links-img:nth-child(2) {
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	
+}
