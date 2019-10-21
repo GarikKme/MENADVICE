@@ -233,6 +233,40 @@ p {
 .slide img {
 	margin: 0 auto;
 }
+
+.slide__text {
+	margin-top: 22px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+	margin: 0;
+	border-radius: 0;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav  {
+	position: absolute;
+	right: 0;
+	top: -145px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	background-color: #0D0000;
+	width: 60px;
+	color:#7D7070;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+	background: #0D0000;
+	color: #FFD22B;
+}
+
+.owl-prev, .owl-next span {
+	font-size: 25px;
+}
+.owl-prev span {
+	font-size: 25px;
+	border-right: 1px solid white;
+}
+
 /* ------ Media Queries ------ */
 
 /* 992-1200px */

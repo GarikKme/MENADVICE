@@ -1,9 +1,10 @@
 $(document).ready(function(){
 	// slider
   $(".owl-carousel").owlCarousel({
-
-		items:4,
-		nav:true
+		nav:true,
+		dots:false,
+		items:4
+		//loop:true
 		
 	});
 });
