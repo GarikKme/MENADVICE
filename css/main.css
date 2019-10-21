@@ -173,11 +173,35 @@ p {
 /* ADVICE */
 
 .advice {
-
+	
 }
 
 .advice__title span {
 	color: #FFDD2D;
+}
+
+.advice__title_span {
+	text-transform: none;
+	color: #000000 !important;
+}
+
+.advice__wrap_text {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.advice__wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.advice__wrap_box {
+	display: flex;
+	align-items: center;
+	margin-left: 70px;
+	padding: 40px 50px 40px 50px;
+	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
 }
 /* ------ Media Queries ------ */
 
