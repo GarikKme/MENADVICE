@@ -36,25 +36,33 @@
 <body>
 	<header class="header" id="header">
 		<div class="container">
-			<div class="row justify-content-between">
-				<div class="logo-wrap">
-					<a href="/" class="logo">MEN<span>ADVICE</span></a>
+			<div class="row justify-content-between flex-sm-column flex-md-row">
+				
+					<div class="logo-wrap">
+						<a href="/" class="logo">MEN<span>ADVICE</span></a>
+						<div class="align-self-center mobile-phone d-block d-lg-none">
+							<a href="tel:+79652499999" class="header__phone">+7 965 249-99-99</a>
+						</div>
+						<button class="menu-open"><i class="fas fa-bars"></i></button>
+					</div>
+				
+				<div class="navigation  align-self-center">
+					<nav class="nav">
+						<ul class="nav__menu menu-collapse">
+							<li><a href="#advice" class="nav__menu_item">Как работает сервис</a></li>
+							<li><a href="#boys" class="nav__menu_item">Кто дает советы</a></li>
+							<li><a href="#safely" class="nav__menu_item">FAQ</a></li>
+							<li><a href="#receipt" class="nav__menu_item">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="nav align-self-center">
-					<ul class="nav__menu">
-						<li><a href="#" class="nav__menu_item">Как работает сервис</a></li>
-						<li><a href="#" class="nav__menu_item">Кто дает советы</a></li>
-						<li><a href="#" class="nav__menu_item">FAQ</a></li>
-						<li><a href="#" class="nav__menu_item">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
-					</ul>
-				</nav>
-				<div class="align-self-center">
+				<div class="align-self-center d-none d-lg-block">
 					<a href="tel:+79652499999" class="header__phone">+7 965 249-99-99</a>
 				</div>
 				<div class="header__line"></div>
 			</div>
 			<div class="row">
-				<div class="col-lg-7">
+				<div class="col-lg-7 img-wrap">
 					<h1 class="header__title">
 						УЗНАЙ, СМОЖЕШЬ ЛИ ТЫ ПОЛУЧИТЬ <span>КЛАССНОГО</span> <span>ПАРНЯ</span>
 					</h1>
@@ -62,11 +70,11 @@
 					<button class="header__btn button">ОСТАВИТЬ ЗАЯВКУ</button>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row justify-content-center justify-content-lg-start">
 				<div class="header__links">
-					<a href="#"><img src="img/lentaru.png" alt="lentaru" class="header__links-img"></a>
-					<a href="#" class="header__links-img"><img src="img/vcru.png" alt="vcru" class="header__links-img"></a>
-					<a href="#"><img src="img/RGRU.png" alt="RGRU" class="header__links-img"></a>
+					<a href="#"><img src="img/lentaru.png" alt="lentaru" class="header__links-img img-fluid"></a>
+					<a href="#"><img src="img/vcru.png" alt="vcru" class="header__links-img img-fluid"></a>
+					<a href="#"><img src="img/RGRU.png" alt="RGRU" class="header__links-img img-fluid"></a>
 				</div>
 			</div>
 		</div>
@@ -75,7 +83,7 @@
 	<section class="advice" id="advice">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-1 d-flex justify-content-between">
+				<div class="col-lg-6 offset-lg-1 d-flex justify-content-between flex-column flex-sm-row align-items-center align-items-sm-start">
 					<h2 class="advice__title">ПОЛУЧИ <span>СОВЕТ</span><br> <span class="advice__title_span">от наших ребят</span>
 					</h2>
 					<p class="advice__text">Все необходимые шаги,<br> чтобы встретить своего парня</p>
@@ -142,7 +150,7 @@
 	<section class="boys" id="boys">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-1 d-flex justify-content-between">
+				<div class="col-lg-6 offset-lg-1 d-flex justify-content-between flex-column flex-sm-row align-items-center align-items-sm-start">
 					<h2 class="advice__title">НАШИ<br>
 						<span>КЛАССНЫЕ </span>ПАРНИ
 					</h2>
@@ -218,7 +226,7 @@
 	<section class="safely" id="safely">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-1 d-flex justify-content-between">
+				<div class="col-lg-6 offset-lg-1 d-flex justify-content-between flex-column flex-sm-row align-items-center align-items-sm-start">
 					<h2 class="advice__title">УДОБНО <br>и
 						<span>БЕЗОПАСНО</span>
 					</h2>
@@ -244,7 +252,7 @@
 	<section class="receipt" id="receipt">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 offset-lg-1 d-flex justify-content-between">
+				<div class="col-lg-7 offset-lg-1 d-flex justify-content-between flex-column flex-sm-row align-items-center align-items-sm-start">
 					<h2 class="advice__title receipt__title">ЧТО ТЫ ПОЛУЧИШЬ<br>
 						<span>В ИТОГЕ</span>
 					</h2>
@@ -279,12 +287,15 @@
 						и получи мнение
 						уже через 8 часов
 					</h2>
+					<div class="cost">
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspвсего<br><span>490 ₽</span></p>
+					</div>
 				</div>
 				<div class="col-lg-6">
-					<form action="success.php" class="form js-form">
-						<input type="text" name="text" id="" placeholder="Имя" class="form__imput">
-						<input type="tel" name="tel" id="" placeholder="Телефон" class="form__imput">
-						<input type="email" name="email" id="" placeholder="E-mail" class="form__imput">
+					<form action="success.php" class="form js-form" id="popupResult">
+						<input type="text" name="name" id="" placeholder="Имя" class="form__input">
+						<input type="tel" name="tel" id="" placeholder="Телефон" class="form__input">
+						<input type="email" name="email" id="" placeholder="E-mail" class="form__input">
 						<button data-submit class="form__btn button">ОСТАВИТЬ ЗАЯВКУ</button>
 					</form>
 				</div>
@@ -313,10 +324,27 @@
 		</div>
 	</footer>
 
+	<!-- Modal window -->
+		<div style="display: none;">
+			<div class="box-modal" id="exampleModal">
+					<div class="box-modal_close arcticmodal-close"></div>
+					<form action="success.php" class="modal-form js-form" id="popupResult">
+						<input type="text" name="name" id="" placeholder="Имя" class="form__input">
+						<input type="email" name="email" id="" placeholder="E-mail" class="form__input">
+						<button data-submit class="form__btn button">ОСТАВИТЬ ЗАЯВКУ</button>
+					</form>
+			</div>
+	</div>
+
+	<!-- Индикация процесса отправки формы -->
+	<div id="loader">
+			<img src="img/ripple.svg">
+		</div>
+
 	<!-- JS Scripts -->
 
 	<!-- <script>
-			if(window.innerWidth < 1900)  {
+			if(window.innerWidth < 1050)  {
 			 var meta=document.createElement('meta');
 			 meta.name='viewport';
 			 meta.setAttribute('content', 'width=1050');
@@ -325,6 +353,7 @@
 		</script> -->
 
 	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
