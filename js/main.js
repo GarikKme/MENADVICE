@@ -10,9 +10,26 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
 		nav:true,
 		dots:false,
-		items:4,
-		margin:15
-		//loop:true
+		//margin:10,
+		//stagePadding:5,
+		autoWidth:false,
+		responsive: {
+			// breakpoint from 0 up
+			0 : {
+					items:1,
+			},
+			// breakpoint from 480 up
+			480 : {
+				items:2,
+			},
+			// breakpoint from 768 up
+			768 : {
+				items:3,
+			},
+			992 : {
+				items:4
+		}
+	}
 		
 	});
 

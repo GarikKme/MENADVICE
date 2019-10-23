@@ -7,7 +7,7 @@ $email = htmlspecialchars($_POST["email"]);
 $refferer = getenv('HTTP_REFERER');
 $date=date("d.m.y"); // число.месяц.год  
 $time=date("H:i"); // часы:минуты:секунды 
-$myemail = "garikk89@i.ua, ho6otok@gmail.com"; // e-mail администратора Hello@menadvice.ru
+$myemail = "ho6otok@gmail.com"; // e-mail администратора Hello@menadvice.ru
 
 
 // Отправка письма администратору сайта

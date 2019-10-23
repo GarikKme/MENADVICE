@@ -122,14 +122,29 @@ p {
 	font-size: 25px;
 }
 
+.owl-stage-outer {
+		height: 412px;
+		padding-top: 20px;
+}
+
 /* ----- Header ----- */
 
 .header {
 	padding-top: 45px;
+	min-height: 91vh;
+}
+
+.header::after {
+	content: '';
+	display: block;
 	background-image: url(../img/bg-header.jpg);
 	background-repeat: no-repeat;
-	background-position: right;
-	min-height: 91vh;
+	z-index: -2;
+	width: 50%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .logo {
@@ -223,7 +238,8 @@ p {
 /* ADVICE */
 
 .advice {
-	/* padding-top: 90px; */
+	background-image: url(../img/advicebg.png);
+	background-repeat: no-repeat;
 	padding-bottom: 100px;
 }
 
@@ -262,6 +278,10 @@ p {
 	margin-left: 70px;
 }
 
+.advice__wrap_box-wrap p {
+	line-height: 1.9em;
+}
+
 .margin {
 	margin-left: 0;
 	margin-right: 100px;
@@ -281,14 +301,21 @@ p {
 	padding-bottom: 100px;
 }
 
+.owl-carousel {
+	margin-left: 105px;
+}
+
 .owl-carousel .owl-item img {
 	min-width: 157px;
 	width: 157px;
 }
 
 .slide {
-	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+	padding-top: 28px;
+	 box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.08);/*0px 10px 12px 3px rgba(0, 0, 0, 0.08); */
+	/* box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12); */
 }
+
 
 .slide img {
 	margin: 0 auto;
@@ -306,13 +333,15 @@ p {
 
 .owl-theme .owl-dots, .owl-theme .owl-nav  {
 	position: absolute;
-	right: 0;
+	right: 20%;
 	top: -145px;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
 	background-color: #0D0000;
 	width: 60px;
 	color:#7D7070;
+	height: 45px;
+	line-height: 45px;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover{
@@ -433,33 +462,11 @@ p {
 
 /* ------ Media Queries ------ */
 
-@media screen and (max-width: 1700px) {
-	.header {
-		background-position-x: 841px;
-	}
-}
-
-@media screen and (max-width: 1500px) {
-	.header {
-		background-position-x: 700px;
-	}
-}
 
 @media screen and (max-width: 1400px) {
-	.header {
-		background-position-x: 600px;
-	}
-}
 
-@media screen and (max-width: 1100px) {
-	.header {
-		background-position-x: 519px;
-	}
-}
-
-@media screen and (max-width: 1100px) {
-	.header {
-		background-position-x: 386px;
+	.advice {
+		padding-top: 90px;
 	}
 }
 
@@ -468,21 +475,14 @@ p {
 	.header {
 		min-height: 100%;
 	}
-
-	.header__phone {
-		
-	}
-
-	.advice {
-		padding-top: 90px;
-	}
+	
 }
 
 /* 768-992px */
 @media screen and (max-width: 992px) {
 
-	.header {
-		background-image: none;
+	.header::after {
+		display: none;
 	}
 
 	.header__title {
@@ -492,7 +492,7 @@ p {
 	.img-wrap {
 		background-image: url(../img/bg-header.jpg);
 		background-repeat: no-repeat;
-    background-position-x: 61px;
+    background-position-x: 50px;
 	}
 
 	.header__links {
@@ -522,6 +522,29 @@ p {
 		width: 100%;
 	}
 
+	.advice__wrap_box-wrap {
+    margin-left: 29px;
+	}
+
+	.margin {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+
+	.owl-carousel {
+		margin-left: 0;
+	}
+
+	.owl-theme .owl-dots, .owl-theme .owl-nav {
+    position: absolute;
+    right: 29px;
+    top: -80px;
+	}
+
+	.header__phone-footer {
+		color: #ffffff;
+	}
+
 }
 
 /* 576-768px */
@@ -545,10 +568,60 @@ p {
 		display: flex;
 		align-items: center;
 	}
+
+	.advice {
+		background-position-y: center;
+	}
+
+	.advice__wrap_box {
+		margin-top: 20px;
+	}
+
+	.safely__btn {
+		width: 100%;
+	}
+
+	.cost {
+		margin-bottom: 100px;
+	}
+
+	.form .form__input, .form__btn {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.advice__wrap_box {
+		display: flex;
+		flex-direction: column !important;
+	}
+
+	.advice__wrap_box-wrap {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.owl-theme .owl-dots, .owl-theme .owl-nav {
+    position: absolute;
+    right: 29px;
+    top: -138px;
+	}
 }
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
+	.header__title {
+		font-size: 25px;
+	}
+
+	.menu-opened li {
+		font-size: 18px;
+	}
+
+	.advice, .boys, .receipt, .advice__text {
+		margin-bottom: 30px;
+	}
+
 	.form__btn {
 		width: 100%;
 	}
@@ -560,4 +633,22 @@ p {
 	.header__phone {
 		font-size: 15px;
 	}
+
+	.feedback__title {
+		width: 100%;
+		text-align: center;
+	}
+
+	.cost {
+		position: relative;
+		margin-bottom: 166px;
+		background-position: center;
+	}
+
+	.cost p {
+		position: absolute;
+    left: 40%;
+    top: 25%;
+	}
+
 }
