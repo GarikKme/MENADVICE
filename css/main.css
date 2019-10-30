@@ -123,7 +123,7 @@ p {
 }
 
 .owl-stage-outer {
-		height: 412px;
+		height: 448px;
 		padding-top: 20px;
 }
 
@@ -192,17 +192,17 @@ p {
 }
 
 .header__line {
-	display: block;
 	width: 674px;
 	border: 1px solid rgba(234, 234, 234, 0.5);
 	margin-top: 47px;
+	display: block;
 }
 
 .header__title {
-	font-size: 30px;
 	font-weight: 500;
 	line-height: 1.7em;
 	padding-top: 120px;
+	font-size: 30px;
 }
 .header__title span {
 	color: #ffdd2d;
@@ -272,6 +272,7 @@ p {
 	align-items: center;
 	padding: 40px 31px 40px 50px;
 	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+	background-color: #fff;
 }
 
 .advice__wrap_box-wrap {
@@ -312,8 +313,8 @@ p {
 
 .slide {
 	padding-top: 28px;
-	 box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.08);/*0px 10px 12px 3px rgba(0, 0, 0, 0.08); */
-	/* box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12); */
+	box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.08);
+	padding-bottom: 45px;
 }
 
 
@@ -460,6 +461,95 @@ p {
 	color: #fff;
 }
 
+/* faq */
+
+.header-faq {
+	padding-top: 50px;
+}
+
+.header-faq .header__line {
+	width: 100%;
+}
+
+.header-faq .header__phone {
+	color: #000000;
+}
+
+.answers {
+	padding-bottom: 100px;
+}
+
+.answers__title {
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+.answers__title span {
+	color: #FFD22B;
+}
+
+.answers__title span:nth-child(2) {
+	color: #000;
+	text-transform: none;
+}
+
+.accord__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.accord__question {
+  padding: 28px 34px 31px 29px;
+  background: #FBFBFB;
+  cursor: pointer;
+}
+
+.accord__question p {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.accordMinus {
+	display: none;
+}
+
+.visible-img {
+	display: block;
+}
+
+.nonevisible-img {
+	display: none;
+}
+
+.accord__answer {
+  display: none;
+  padding: 30px;
+}
+.accord__answer p {
+  margin-bottom: 10px;
+}
+
+.faq-link {
+	color: #FFDD2D;
+}
+
+.pay {
+	min-height: 75vh;
+}
+
+.pay__title span{
+ color: #FFD22B;
+}
+
+.thx {
+	min-height: 75vh;
+}
+
+.thx__title {
+	text-transform: capitalize;
+}
+
+.thx__text span {
+	color: #FFD22B;
+}
 /* ------ Media Queries ------ */
 
 
@@ -591,6 +681,10 @@ p {
 }
 
 @media screen and (max-width: 430px) {
+
+	.img-wrap {
+		background: none;
+	}
 	.advice__wrap_box {
 		display: flex;
 		flex-direction: column !important;
@@ -649,6 +743,14 @@ p {
 		position: absolute;
     left: 40%;
     top: 25%;
+	}
+
+	.slide {
+		text-align: center;
+	}
+
+	.feedback__title {
+		margin-bottom: 20px;
 	}
 
 }

@@ -47,7 +47,25 @@ $(document).ready(function(){
 	$('.header__btn, .safely__btn').click(function (e) {
 		e.preventDefault();
 		$('#exampleModal').arcticmodal();
+		//location.href = 'pay.html';
 	});
+
+
+
+	// аккордион
+  $(".accord__question").on("click", function () {
+    $(this).next().stop(true).slideToggle(500);
+    $(this).children(".accord__arrow");
+    $(".accordPlus").toggleClass("nonevisible-img");
+    $(".accordMinus").toggleClass("visible-img");
+  });
+
+  $(".pPrices__col_m span").on("click", function () {
+    $(this).next().stop(true).slideToggle(500);
+    $(this).children("i").toggleClass("rotate");
+  });
+
+
 
 
 	//Валидация и отправка формы
@@ -112,13 +130,13 @@ $(document).ready(function() {
 													})
 													.always(function(response) {
 															//ссылка на страницу "спасибо" - редирект
-															location.href = '';
+															location.href = 'ThanksPage.html';
 															//отправка целей в Я.Метрику и Google Analytics
 															ga('send', 'event', 'masterklass7', 'register');
 															yaCounter27714603.reachGoal('lm17lead');
 													});
 											break;
-									// Если у формы id="popupResult" - делаем:
+									//Если у формы id="popupResult" - делаем:
 									case 'popupResult':
 											$.ajax({
 															type: 'POST',
@@ -134,10 +152,10 @@ $(document).ready(function() {
 																	$form.trigger('reset');
 																	//строки для остлеживания целей в Я.Метрике и Google Analytics
 															}, 1100);
-															// $('#overlay').on('click', function(e) {
-															// 		$(this).fadeOut();
-															// });
-															alert('Спасибо, Ваша заявка отправлена');
+															$('#overlay').on('click', function(e) {
+																	$(this).fadeOut();
+															});
+															//alert('Спасибо, Ваша заявка отправлена');
 
 													});
 											break;

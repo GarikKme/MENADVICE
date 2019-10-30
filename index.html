@@ -8,8 +8,8 @@
 	<meta name="description" content="Все необходимые шаги, чтобы встретить своего парня">
 	<meta name="keywords" content="получи, совет, от наших ребят">
 	<!-- Favicon -->
-	<link rel="icon" href="">
-	<link rel="shortcut icon" href="">
+	<link rel="icon" href="img/short-icon.jpg">
+	<link rel="shortcut icon" href="img/short-icon.jpg">
 	<!-- OG Tags -->
 	<meta property="og:title" content="MENADVICE">
 	<meta property="og:description" content='Все необходимые шаги, чтобы встретить своего парня'>
@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
-	<link rel="stylesheet" href="css/main.css?v=1.4">
+	<link rel="stylesheet" href="css/main.css?v=1.8">
 
 </head>
 
@@ -50,8 +50,9 @@
 						<ul class="nav__menu menu-collapse">
 							<li><a href="#advice" class="nav__menu_item">Как работает сервис</a></li>
 							<li><a href="#boys" class="nav__menu_item">Кто дает советы</a></li>
-							<li><a href="#safely" class="nav__menu_item">FAQ</a></li>
-							<li><a href="#receipt" class="nav__menu_item">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
+							<li><a href="faq.html" class="nav__menu_item">FAQ</a></li>
+							<li><a href="#safely" class="nav__menu_item">Конфиденциальность</a></li>
+							<li><a href="pay.html" class="nav__menu_item">Оплата</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -71,9 +72,12 @@
 			</div>
 			<div class="row justify-content-center justify-content-lg-start">
 				<div class="header__links">
-					<a href="https://m.lenta.ru/"><img src="img/lentaru.png" alt="lentaru" class="header__links-img img-fluid"></a>
-					<a href="https://vc.ru/"><img src="img/vcru.png" alt="vcru" class="header__links-img img-fluid"></a>
-					<a href="http://RG.ru"><img src="img/RGRU.png" alt="RGRU" class="header__links-img img-fluid"></a>
+					<a href="https://m.lenta.ru/" target="_blank"><img src="img/lentaru.png" alt="lentaru"
+							class="header__links-img img-fluid"></a>
+					<a href="https://vc.ru/" target="_blank"><img src="img/vcru.png" alt="vcru"
+							class="header__links-img img-fluid"></a>
+					<a href="http://RG.ru" target="_blank"><img src="img/RGRU.png" alt="RGRU"
+							class="header__links-img img-fluid"></a>
 				</div>
 			</div>
 		</div>
@@ -116,7 +120,7 @@
 				</div>
 				<div class="col-md-8 col-lg-6 order-3 order-md-1 offset-lg-1">
 					<div class="advice__wrap_box flex-row-reverse">
-						<img src="img/adviceSvg2.svg" alt="icon" class="img-fluid mr-3">
+						<img src="img/adviceSvg2.svg" alt="icon" class="img-fluid">
 						<div class="advice__wrap_box-wrap margin">
 							<div>
 								<p>Мы отбираем лучших</p>
@@ -299,7 +303,7 @@
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-6">
-					<form action="success.php" class="form js-form" id="popupResult">
+					<form action="success.php" class="form js-form" id="goToNewPage">
 						<input type="text" name="name" id="" placeholder="Имя" class="form__input">
 						<input type="tel" name="tel" id="" placeholder="Телефон" class="form__input">
 						<input type="email" name="email" id="" placeholder="E-mail" class="form__input">
@@ -319,13 +323,14 @@
 						<a href="tel:+79652499999" class="header__phone header__phone-footer d-block d-lg-none">+7 965 249-99-99</a>
 					</div>
 				</div>
-				<div class="navigation">
-					<nav class="nav align-self-center">
+				<div class="navigation align-self-center">
+					<nav class="nav">
 						<ul class="nav__menu">
-							<li><a href="#" class="nav__menu_item">Как работает сервис</a></li>
-							<li><a href="#" class="nav__menu_item">Кто дает советы</a></li>
-							<li><a href="#" class="nav__menu_item">FAQ</a></li>
-							<li><a href="#" class="nav__menu_item">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
+							<li><a href="#advice" class="nav__menu_item">Как работает сервис</a></li>
+							<li><a href="#boys" class="nav__menu_item">Кто дает советы</a></li>
+							<li><a href="faq.html" class="nav__menu_item">FAQ</a></li>
+							<li><a href="#safely" class="nav__menu_item">Конфиденциальность</a></li>
+							<li><a href="pay.html" class="nav__menu_item">Оплата</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -340,7 +345,7 @@
 	<div style="display: none;">
 		<div class="box-modal" id="exampleModal">
 			<div class="box-modal_close arcticmodal-close"></div>
-			<form action="success.php" class="modal-form js-form" id="popupResult">
+			<form action="success.php" class="modal-form js-form" id="goToNewPage">
 				<input type="text" name="name" id="" placeholder="Имя" class="form__input">
 				<input type="email" name="email" id="" placeholder="E-mail" class="form__input">
 				<button data-submit class="form__btn button">ОСТАВИТЬ ЗАЯВКУ</button>
@@ -356,7 +361,8 @@
 	<!-- JS Scripts -->
 
 	<script src="js/jquery-3.4.0.min.js"></script>
-	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js">
+	</script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
